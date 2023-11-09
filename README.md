@@ -32,5 +32,10 @@ spec:
 
 ```
 
-Then we edit the Deployment file as per our application (tags,labels) and also use the image that we build by specifying the image-name in our deployment.
+Then we edit the Deployment file as per our application (tags,labels) and also use the image that we build by specifying the image-name in our deployment.<br/>
+Create the deployment using:
+```bash
+  kubectl apply -f deployment.yml
+```
+
 
