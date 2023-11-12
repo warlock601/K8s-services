@@ -1,5 +1,7 @@
 # K8s-services
-How we use k8s-services to expose the application tot he outside world as well as within our k8s cluster and within our organization. <br/>
+An abstract way to expose an application running on a set of pods as a network service. <br/>
+<br/>
+How we use k8s-services to expose the application tot he outside world as well as within our k8s cluster and within our organization? <br/>
 
 First we create an image using [Dockerfile](https://github.com/warlock601/K8s-services/blob/c88d7e410bfdb916fc008bec988b7b76dfe28e7b/Dockerfile) 
 ```bash
