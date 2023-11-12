@@ -66,4 +66,7 @@ Now, the users who want to access this application can be inside or even outside
 - For users inside our organization but outside our cluster, we can expose our application on the k8s worker node IP. **NodePort** mode will be used here (application will be exposed on the Node IP address).
 - For users outside our organization, they don't even have access to even our organization so we need public IPs for this app so that anyone in the world can access this app. **Load Balancer** mode will be used here. <br/>
 <br/>
-To use these 2 modes, we need K8s service
+To use these 2 modes, we need K8s service. In our case, the node IP is the minikube IP address because we're using minikube. Services will only bother bother baout the labels and selectors.
+Note: For Service label, always copy the label from Deployments-Template as it might have different selectors and labels for Deployment.
+
+![Screenshot 2023-11-12 053944](https://github.com/warlock601/K8s-services/assets/32487715/8724201f-b18e-43cd-a370-3e249185df34)
