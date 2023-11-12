@@ -93,8 +93,10 @@ But if we take the same URL & try to access the traffic from outside, it will no
 ![Screenshot 2023-11-12 082026](https://github.com/warlock601/K8s-services/assets/32487715/f16a984c-accd-4243-9ed0-7f53305b09c8)
 
 We're using Minikube here so here we won't be able to see any difference as it will work only inside a Cloud Provider as LoadBalancer type is only applicable with a cloud provider.
-Here we see that the External IP is pending & if instead of minikube we've used any cloud provider, it would've been assigned an external IP.
+Here we see that the External IP is pending & if instead of minikube we've used any cloud provider, it would've been assigned an external IP. CCM of k8s will be genrating this external IP.
 
 
 ![Screenshot 2023-11-12 082738](https://github.com/warlock601/K8s-services/assets/32487715/7e91f6d5-4fe4-4fe4-bd7e-394470f6cc3a)
 
+We can use MetalLB to assign a public IP. <br/>
+We can use KubeShark to Monitor the traffic for k8s, as it can stream live traffic (we can also use it to check the load balancing done to the pods running behind a k8s service).
