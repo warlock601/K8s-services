@@ -6,6 +6,6 @@ spec:
   selector:
     app: simple-web-app
   ports:
-    - protocol: TCP
-      port: 80
+    - port: 80
       targetPort: 8000
+      nodePort: 30070
