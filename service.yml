@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: python-webapp-service
 spec:
+  type: NodePort
   selector:
     app: simple-web-app
   ports:
